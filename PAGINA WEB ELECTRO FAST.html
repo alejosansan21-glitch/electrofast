@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Electrofast - Tienda didáctica de pequeños electrodomésticos. Productos pensados para facilitarte la vida en casa: licuadoras, batidoras, tostadoras, aspiradoras y más." />
+  <title>Electrofast — Electrodomésticos que facilitan tu vida</title>
+
+  <!-- Estilos básicos: guarda todo en este archivo para abrir directamente en Sublime -->
+  <style>
+    /* Reset ligero */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; background: #f6f8fb; }
+
+    header { background: linear-gradient(90deg,#0b79d0,#0b3f7a); color: #fff; padding: 24px 16px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { width:64px; height:64px; border-radius:8px; background: #fff4; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px; }
+    nav { margin-left: auto; }
+    .nav-list { list-style:none; display:flex; gap:16px; align-items:center; }
+    .nav-list a { color: #fff; text-decoration:none; font-weight:600; }
+    .hero { display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-top:20px; }
+
+    .hero-text { flex:1 1 380px; color:#f0f8ff; }
+    .hero-text h1 { font-size:28px; margin-bottom:8px; }
+    .hero-text p { opacity:0.95; margin-bottom:12px; }
+    .cta { background:#ffd54a; color:#0b3f7a; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; }
+
+    .hero-image { flex:0 1 320px; background: #fff; border-radius:12px; padding:12px; }
+    .hero-image img { width:100%; height:auto; display:block; border-radius:8px; }
+
+    main { margin-top:20px; }
+
+    /* Productos */
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:18px; }
+    .card { background:#fff; border-radius:12px; padding:14px; box-shadow: 0 6px 18px rgba(15,20,40,0.06); display:flex; flex-direction:column; gap:10px; }
+    .card img { width:100%; height:160px; object-fit:cover; border-radius:8px; }
+    .product-title { font-weight:700; font-size:16px; }
+    .price { color:#0b7bd0; font-weight:800; margin-top:6px; }
+    .btn { background:#0b79d0; color:#fff; padding:8px 10px; border-radius:8px; text-decoration:none; text-align:center; display:inline-block; font-weight:700; }
+
+    section h2 { margin: 18px 0 10px 0; font-size:20px; color:#0b3f7a; }
+
+    /* Target audience & beneficios */
+    .two-cols { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+    .list { list-style: disc; margin-left:20px; }
+
+    /* FAQ */
+    .faq-item { background:#fff; padding:12px; border-radius:10px; margin-bottom:10px; }
+    .faq-q { font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+    .faq-a { display:none; margin-top:8px; color:#333; }
+
+    /* Footer */
+    footer { margin-top:30px; padding:20px 0; color:#fff; background:#0b2f54; }
+    .footer-row { display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start; }
+    .contact-card { background:#fff; color:#0b2f54; padding:12px; border-radius:8px; min-width:220px; }
+
+    /* Responsive */
+    @media (max-width:800px){
+      .two-cols { grid-template-columns: 1fr; }
+      .nav-list { display:none; }
+      header .container { display:flex; align-items:center; gap:12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container" style="display:flex; align-items:center;">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EF</div>
+        <div>
+          <div style="font-weight:800; font-size:18px;">Electrofast</div>
+          <div style="font-size:12px; opacity:0.9;">Electrodomésticos para la vida cotidiana</div>
+        </div>
+      </div>
+
+      <nav aria-label="Menú principal" style="margin-left:auto;">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><a role="menuitem" href="#productos">Productos</a></li>
+          <li role="none"><a role="menuitem" href="#beneficios">Beneficios</a></li>
+          <li role="none"><a role="menuitem" href="#audiencia">Audiencia</a></li>
+          <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <div class="hero-text">
+        <h1>Electrofast — soluciones eléctricas para hogares modernos</h1>
+        <p>En Electrofast diseñamos y distribuimos pequeños electrodomésticos inteligentes y confiables pensados para facilitar las tareas diarias del hogar: desde preparar alimentos hasta limpieza y confort. Calidad, simplicidad y ahorro de tiempo.</p>
+        <a class="cta" href="#productos">Ver productos destacados</a>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://via.placeholder.com/560x320?text=Electrofast+Electrodomésticos" alt="Muestra de electrodomésticos de hogar" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- Sección productos -->
+    <section id="productos" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos destacados</h2>
+      <p>Electrofast ofrece una gama de productos pensados para las necesidades diarias del hogar.</p>
+
+      <div class="grid" aria-live="polite">
+        <!-- Producto 1 -->
+        <article class="card" aria-label="Licuadora Electrofast 700W">
+          <img src="https://via.placeholder.com/600x400?text=Licuadora+Electrofast" alt="Licuadora moderna sobre encimera" />
+          <div class="product-title">Licuadora Electrofast 700W</div>
+          <div class="small">Ideal para zumos, batidos y salsas.</div>
+          <div class="price">$129.900</div>
+          <a class="btn" href="#contacto">Solicitar información</a>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card" aria-label="Batidora de mano Electrofast">
+          <img src="https://via.placeholder.com/600x400?text=Batidora+de+mano" alt="Batidora de mano en uso" />
+          <div class="product-title">Batidora de mano Compact</div>
+          <div class="small">Portátil y fácil de usar.</div>
+          <div class="price">$79.900</div>
+          <a class="btn" href="#contacto">Solicitar información</a>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card" aria-label="Aspiradora Electrofast">
+          <img src="https://via.placeholder.com/600x400?text=Aspiradora+Electrofast" alt="Aspiradora sin cable" />
+          <div class="product-title">Aspiradora sin cable UltraClean</div>
+          <div class="small">Ligera, potente y silenciosa.</div>
+          <div class="price">$239.900</div>
+          <a class="btn" href="#contacto">Solicitar información</a>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="card" aria-label="Tostadora Inteligente">
+          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2F-%2Fes%2FTostadora-temporizador-inoxidable-tostadoras-inteligentes%2Fdp%2FB0D795HGJH&psig=AOvVaw2XKdYc4xnr9KWzw-Ds0Bnw&ust=1764369828380000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPi6vvuzk5EDFQAAAAAdAAAAABAE" alt="Tostadora moderna con control digital" />
+          <div class="product-title">Tostadora 4 rebanadas SmartToast</div>
+          <div class="small">Controles digitales y temporizador.</div>
+          <div class="price">$99.900</div>
+          <a class="btn" href="#contacto">Solicitar información</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" aria-labelledby="beneficios-title" style="margin-top:22px;">
+      <h2 id="beneficios-title">Cómo Electrofast facilita tu vida</h2>
+      <div class="two-cols" style="margin-top:12px;">
+        <div>
+          <ul class="list">
+            <li>Ahorro de tiempo en tareas domésticas (cocinar, limpiar, preparar alimentos).</li>
+            <li>Diseño ergonómico que reduce esfuerzo físico y simplifica el uso.</li>
+            <li>Productos con eficiencia energética para menor consumo y ahorro económico.</li>
+            <li>Tecnología pensada para la seguridad: apagado automático, materiales seguros y bajo ruido.</li>
+          </ul>
+        </div>
+        <div>
+          <p>Nuestros electrodomésticos no solo realizan la tarea: integran funciones que garantizan rapidez y confiabilidad. Por ejemplo, una licuadora con diferentes velocidades y sistema de seguridad reduce el tiempo de preparación y evita accidentes; una aspiradora sin cable permite limpiar en menos pasos y desde cualquier lugar de la casa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audiencia -->
+    <section id="audiencia" aria-labelledby="audiencia-title" style="margin-top:22px;">
+      <h2 id="audiencia-title">Público objetivo</h2>
+      <p>Electrofast está dirigida a:</p>
+      <ul class="list">
+        <li>Familias jóvenes que buscan productos eficientes y seguros para la cocina y el hogar.</li>
+        <li>Profesionales con poco tiempo que necesitan soluciones rápidas (por ejemplo, preparar comida en minutos).</li>
+        <li>Adultos mayores que valoran productos ergonómicos y fáciles de usar.</li>
+        <li>Personas interesadas en tecnología doméstica accesible y de bajo consumo energético.</li>
+      </ul>
+
+      <h3 style="margin-top:12px;">Propuesta de valor</h3>
+      <p>Electrofast combina: diseño intuitivo + durabilidad + precios competitivos. Además, ofrecemos manuales didácticos y videos cortos (tutoriales) para que cada usuario aproveche al máximo su producto.</p>
+    </section>
+
+    <!-- Didáctica: cómo enseñamos a usar -->
+    <section aria-labelledby="didactica-title" style="margin-top:22px;">
+      <h2 id="didactica-title">Enfoque didáctico</h2>
+      <p>Como empresa didáctica, Electrofast incluye en cada producto:</p>
+      <ul class="list">
+        <li>Guía paso a paso ilustrada (impresa y PDF) para montaje y uso seguro.</li>
+        <li>Videos breves con recetas o prácticas de uso (subidos a canal propio).</li>
+        <li>Atención al cliente con soporte técnico y tutoriales personalizados.</li>
+      </ul>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section aria-labelledby="faq-title" style="margin-top:22px;">
+      <h2 id="faq-title">Preguntas frecuentes</h2>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>¿Los productos tienen garantía?</span><span>+</span></div>
+        <div class="faq-a">Sí. Todos los electrodomésticos Electrofast incluyen garantía mínima de 1 año contra defectos de fabricación. Opciones de extensión disponibles.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>¿Ofrecen manuales en PDF?</span><span>+</span></div>
+        <div class="faq-a">Sí. Cada producto trae un manual físico y un enlace para descargar el PDF con instrucciones y videotutoriales.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>¿Venden repuestos?</span><span>+</span></div>
+        <div class="faq-a">Sí, contamos con repuestos y piezas de desgaste. Recomendamos revisar disponibilidad según el modelo.</div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" style="margin-top:22px;">
+      <h2>Contacto</h2>
+      <div style="display:flex; gap:18px; flex-wrap:wrap; margin-top:12px;">
+        <div class="contact-card">
+          <strong>Electrofast S.A.S.</strong>
+          <p style="font-size:14px;">Calle Ficticia 123, Ciudad</p>
+          <p style="font-size:14px;">Tel: +57 300 000 0000</p>
+          <p style="font-size:14px;">Email: contacto@electrofast.com</p>
+        </div>
+
+        <form id="contactForm" style="background:#fff; padding:12px; border-radius:8px; box-shadow: 0 6px 18px rgba(15,20,40,0.04); min-width:320px;">
+          <label for="name" style="display:block; font-weight:700; margin-bottom:6px;">Nombre</label>
+          <input id="name" type="text" required placeholder="Tu nombre" style="width:100%; padding:8px; margin-bottom:8px; border-radius:6px; border:1px solid #ddd;" />
+
+          <label for="email" style="display:block; font-weight:700; margin-bottom:6px;">Email</label>
+          <input id="email" type="email" required placeholder="tu@email.com" style="width:100%; padding:8px; margin-bottom:8px; border-radius:6px; border:1px solid #ddd;" />
+
+          <label for="message" style="display:block; font-weight:700; margin-bottom:6px;">Mensaje</label>
+          <textarea id="message" rows="4" placeholder="Cuéntanos qué necesitas" style="width:100%; padding:8px; margin-bottom:8px; border-radius:6px; border:1px solid #ddd;"></textarea>
+
+          <button type="submit" class="btn" style="display:inline-block">Enviar</button>
+          <small style="display:block; margin-top:8px; color:#666;">(Formulario de ejemplo — en producción conectarlo a un servidor o servicio de correo)</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div style="flex:1;">
+          <strong>Electrofast</strong>
+          <div style="margin-top:6px; max-width:520px;">Electrofast es una empresa enfocada en acercar electrodomésticos confiables, fáciles de usar y con guía didáctica para todo público. Comprometidos con la eficiencia, seguridad y facilidad de uso.</div>
+        </div>
+
+        <div style="min-width:220px;">
+          <div style="color:#fff; margin-bottom:6px; font-weight:700;">Síguenos</div>
+          <div style="display:flex; gap:8px;">
+            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">FB</div>
+            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">IG</div>
+            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">YT</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px; font-size:13px; opacity:0.9;">© <span id="year"></span> Electrofast S.A.S. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Pequeño script para interacción -->
+  <script>
+    // Año dinámico en el pie
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQs toggle
+    function toggleFaq(el) {
+      var a = el.nextElementSibling;
+      var sign = el.querySelector('span:last-child');
+      if (!a) return;
+      if (a.style.display === 'block') {
+        a.style.display = 'none';
+        sign.textContent = '+';
+      } else {
+        a.style.display = 'block';
+        sign.textContent = '−';
+      }
+    }
+
+    // Form handler (demo)
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      if (!name || !email) {
+        alert('Por favor completa tu nombre y correo.');
+        return;
+      }
+      // Aquí podrías enviar el formulario por fetch a tu servidor.
+      alert('Gracias, ' + name + '. Tu mensaje ha sido recibido (demo).');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
