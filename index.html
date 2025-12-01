@@ -206,6 +206,128 @@
       </div>
     </section>
 
+    <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Electrofast - Tienda didáctica de pequeños electrodomésticos. Productos pensados para facilitarte la vida en casa: licuadoras, batidoras, tostadoras, aspiradoras y más." />
+  <title>Electrofast — Electrodomésticos que facilitan tu vida</title>
+
+  <!-- Estilos básicos: guarda todo en este archivo para abrir directamente en Sublime -->
+  <style>
+    /* Reset ligero */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; background: #f6f8fb; }
+
+    header { background: linear-gradient(90deg,#0b79d0,#0b3f7a); color: #fff; padding: 24px 16px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { width:64px; height:64px; border-radius:8px; background: #fff4; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px; }
+    nav { margin-left: auto; }
+    .nav-list { list-style:none; display:flex; gap:16px; align-items:center; }
+    .nav-list a { color: #fff; text-decoration:none; font-weight:600; }
+    .hero { display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-top:20px; }
+
+    .hero-text { flex:1 1 380px; color:#f0f8ff; }
+    .hero-text h1 { font-size:28px; margin-bottom:8px; }
+    .hero-text p { opacity:0.95; margin-bottom:12px; }
+    .cta { background:#ffd54a; color:#0b3f7a; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; }
+
+    .hero-image { flex:0 1 320px; background: #fff; border-radius:12px; padding:12px; }
+    .hero-image img { width:100%; height:auto; display:block; border-radius:8px; }
+
+    main { margin-top:20px; }
+
+    /* Productos */
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:18px; }
+    .card { background:#fff; border-radius:12px; padding:14px; box-shadow: 0 6px 18px rgba(15,20,40,0.06); display:flex; flex-direction:column; gap:10px; }
+    .card img { width:100%; height:160px; object-fit:cover; border-radius:8px; }
+    .product-title { font-weight:700; font-size:16px; }
+    .price { color:#0b7bd0; font-weight:800; margin-top:6px; }
+    .btn { background:#0b79d0; color:#fff; padding:8px 10px; border-radius:8px; text-decoration:none; text-align:center; display:inline-block; font-weight:700; }
+
+    section h2 { margin: 18px 0 10px 0; font-size:20px; color:#0b3f7a; }
+
+    /* Target audience & beneficios */
+    .two-cols { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+    .list { list-style: disc; margin-left:20px; }
+
+    /* FAQ */
+    .faq-item { background:#fff; padding:12px; border-radius:10px; margin-bottom:10px; }
+    .faq-q { font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+    .faq-a { display:none; margin-top:8px; color:#333; }
+
+    /* Footer */
+    footer { margin-top:30px; padding:20px 0; color:#fff; background:#0b2f54; }
+    .footer-row { display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start; }
+    .contact-card { background:#fff; color:#0b2f54; padding:12px; border-radius:8px; min-width:220px; }
+
+    /* NUEVAS SECCIONES (rúbrica) */
+    .box { background:#fff; border-radius:10px; padding:14px; box-shadow: 0 6px 18px rgba(15,20,40,0.04); margin-bottom:16px; }
+    .lean-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:12px; }
+    .foda { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+    .foda .tile { background:#f7fbff; padding:10px; border-radius:8px; min-height:80px; }
+    .organigrama { display:flex; justify-content:center; margin-top:12px; }
+    .org-node { background:#0b79d0; color:#fff; padding:10px 12px; border-radius:8px; margin:6px; min-width:140px; text-align:center; }
+    .org-row { display:flex; gap:12px; justify-content:center; align-items:center; }
+    .table { width:100%; border-collapse:collapse; }
+    .table th, .table td { border:1px solid #e6eef9; padding:8px; text-align:left; }
+    .muted { color:#666; font-size:14px; }
+
+    @media (max-width:800px){
+      .two-cols { grid-template-columns: 1fr; }
+      .nav-list { display:none; }
+      header .container { display:flex; align-items:center; gap:12px; }
+      .foda { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container" style="display:flex; align-items:center;">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EF</div>
+        <div>
+          <div style="font-weight:800; font-size:18px;">Electrofast</div>
+          <div style="font-size:12px; opacity:0.9;">Electrodomésticos para la vida cotidiana</div>
+        </div>
+      </div>
+
+      <nav aria-label="Menú principal" style="margin-left:auto;">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><a role="menuitem" href="#productos">Productos</a></li>
+          <li role="none"><a role="menuitem" href="#beneficios">Beneficios</a></li>
+          <li role="none"><a role="menuitem" href="#audiencia">Audiencia</a></li>
+          <li role="none"><a role="menuitem" href="#didactica">Didáctica</a></li>
+          <li role="none"><a role="menuitem" href="#aplicacion">Aplicación</a></li>
+          <li role="none"><a role="menuitem" href="#juridica">Identidad</a></li>
+          <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <div class="hero-text">
+        <h1>Electrofast — soluciones eléctricas para hogares modernos</h1>
+        <p>En Electrofast diseñamos y distribuimos pequeños electrodomésticos inteligentes y confiables pensados para facilitar las tareas diarias del hogar: desde preparar alimentos hasta limpieza y confort. Calidad, simplicidad y ahorro de tiempo.</p>
+        <a class="cta" href="#productos">Ver productos destacados</a>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://via.placeholder.com/560x320?text=Electrofast+Electrodomésticos" alt="Muestra de electrodomésticos de hogar" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- Sección productos -->
+    <section id="productos" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos destacados</h2>
+      <p>Electrofast ofrece una gama de productos pensados para las necesidades diarias del hogar.</p>
+
+      <div class=
+
     <!-- Contacto -->
     <section id="contacto" style="margin-top:22px;">
       <h2>Contacto</h2>
@@ -291,6 +413,7 @@
   </script>
 </body>
 </html>
+
 
 
 
