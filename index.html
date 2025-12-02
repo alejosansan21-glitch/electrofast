@@ -92,7 +92,7 @@
         <a class="cta" href="#productos">Ver productos destacados</a>
       </div>
       <div class="hero-image" aria-hidden="true">
-       
+        <img src="https://via.placeholder.com/560x320?text=Electrofast+Electrodomésticos" alt="Muestra de electrodomésticos de hogar" />
       </div>
     </div>
   </header>
@@ -106,7 +106,7 @@
       <div class="grid" aria-live="polite">
         <!-- Producto 1 -->
         <article class="card" aria-label="Licuadora Electrofast 700W">
-          
+          <img src="https://via.placeholder.com/600x400?text=Licuadora+Electrofast" alt="Licuadora moderna sobre encimera" />
           <div class="product-title">Licuadora Electrofast 700W</div>
           <div class="small">Ideal para zumos, batidos y salsas.</div>
           <div class="price">$129.900</div>
@@ -115,7 +115,7 @@
 
         <!-- Producto 2 -->
         <article class="card" aria-label="Batidora de mano Electrofast">
-          
+          <img src="https://via.placeholder.com/600x400?text=Batidora+de+mano" alt="Batidora de mano en uso" />
           <div class="product-title">Batidora de mano Compact</div>
           <div class="small">Portátil y fácil de usar.</div>
           <div class="price">$79.900</div>
@@ -124,7 +124,7 @@
 
         <!-- Producto 3 -->
         <article class="card" aria-label="Aspiradora Electrofast">
-          
+          <img src="https://via.placeholder.com/600x400?text=Aspiradora+Electrofast" alt="Aspiradora sin cable" />
           <div class="product-title">Aspiradora sin cable UltraClean</div>
           <div class="small">Ligera, potente y silenciosa.</div>
           <div class="price">$239.900</div>
@@ -133,7 +133,7 @@
 
         <!-- Producto 4 -->
         <article class="card" aria-label="Tostadora Inteligente">
-         
+          <img src="https://via.placeholder.com/600x400?text=Tostadora+Inteligente" alt="Tostadora moderna con control digital" />
           <div class="product-title">Tostadora 4 rebanadas SmartToast</div>
           <div class="small">Controles digitales y temporizador.</div>
           <div class="price">$99.900</div>
@@ -206,135 +206,13 @@
       </div>
     </section>
 
-    <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Electrofast - Tienda didáctica de pequeños electrodomésticos. Productos pensados para facilitarte la vida en casa: licuadoras, batidoras, tostadoras, aspiradoras y más." />
-  <title>Electrofast — Electrodomésticos que facilitan tu vida</title>
-
-  <!-- Estilos básicos: guarda todo en este archivo para abrir directamente en Sublime -->
-  <style>
-    /* Reset ligero */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html,body { height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; background: #f6f8fb; }
-
-    header { background: linear-gradient(90deg,#0b79d0,#0b3f7a); color: #fff; padding: 24px 16px; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:64px; height:64px; border-radius:8px; background: #fff4; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px; }
-    nav { margin-left: auto; }
-    .nav-list { list-style:none; display:flex; gap:16px; align-items:center; }
-    .nav-list a { color: #fff; text-decoration:none; font-weight:600; }
-    .hero { display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-top:20px; }
-
-    .hero-text { flex:1 1 380px; color:#f0f8ff; }
-    .hero-text h1 { font-size:28px; margin-bottom:8px; }
-    .hero-text p { opacity:0.95; margin-bottom:12px; }
-    .cta { background:#ffd54a; color:#0b3f7a; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; }
-
-    .hero-image { flex:0 1 320px; background: #fff; border-radius:12px; padding:12px; }
-    .hero-image img { width:100%; height:auto; display:block; border-radius:8px; }
-
-    main { margin-top:20px; }
-
-    /* Productos */
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:18px; }
-    .card { background:#fff; border-radius:12px; padding:14px; box-shadow: 0 6px 18px rgba(15,20,40,0.06); display:flex; flex-direction:column; gap:10px; }
-    .card img { width:100%; height:160px; object-fit:cover; border-radius:8px; }
-    .product-title { font-weight:700; font-size:16px; }
-    .price { color:#0b7bd0; font-weight:800; margin-top:6px; }
-    .btn { background:#0b79d0; color:#fff; padding:8px 10px; border-radius:8px; text-decoration:none; text-align:center; display:inline-block; font-weight:700; }
-
-    section h2 { margin: 18px 0 10px 0; font-size:20px; color:#0b3f7a; }
-
-    /* Target audience & beneficios */
-    .two-cols { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
-    .list { list-style: disc; margin-left:20px; }
-
-    /* FAQ */
-    .faq-item { background:#fff; padding:12px; border-radius:10px; margin-bottom:10px; }
-    .faq-q { font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
-    .faq-a { display:none; margin-top:8px; color:#333; }
-
-    /* Footer */
-    footer { margin-top:30px; padding:20px 0; color:#fff; background:#0b2f54; }
-    .footer-row { display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start; }
-    .contact-card { background:#fff; color:#0b2f54; padding:12px; border-radius:8px; min-width:220px; }
-
-    /* NUEVAS SECCIONES (rúbrica) */
-    .box { background:#fff; border-radius:10px; padding:14px; box-shadow: 0 6px 18px rgba(15,20,40,0.04); margin-bottom:16px; }
-    .lean-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:12px; }
-    .foda { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-    .foda .tile { background:#f7fbff; padding:10px; border-radius:8px; min-height:80px; }
-    .organigrama { display:flex; justify-content:center; margin-top:12px; }
-    .org-node { background:#0b79d0; color:#fff; padding:10px 12px; border-radius:8px; margin:6px; min-width:140px; text-align:center; }
-    .org-row { display:flex; gap:12px; justify-content:center; align-items:center; }
-    .table { width:100%; border-collapse:collapse; }
-    .table th, .table td { border:1px solid #e6eef9; padding:8px; text-align:left; }
-    .muted { color:#666; font-size:14px; }
-
-    @media (max-width:800px){
-      .two-cols { grid-template-columns: 1fr; }
-      .nav-list { display:none; }
-      header .container { display:flex; align-items:center; gap:12px; }
-      .foda { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="container" style="display:flex; align-items:center;">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">EF</div>
-        <div>
-          <div style="font-weight:800; font-size:18px;">Electrofast</div>
-          <div style="font-size:12px; opacity:0.9;">Electrodomésticos para la vida cotidiana</div>
-        </div>
-      </div>
-
-      <nav aria-label="Menú principal" style="margin-left:auto;">
-        <ul class="nav-list" role="menubar">
-          <li role="none"><a role="menuitem" href="#productos">Productos</a></li>
-          <li role="none"><a role="menuitem" href="#beneficios">Beneficios</a></li>
-          <li role="none"><a role="menuitem" href="#audiencia">Audiencia</a></li>
-          <li role="none"><a role="menuitem" href="#didactica">Didáctica</a></li>
-          <li role="none"><a role="menuitem" href="#aplicacion">Aplicación</a></li>
-          <li role="none"><a role="menuitem" href="#juridica">Identidad</a></li>
-          <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="container hero">
-      <div class="hero-text">
-        <h1>Electrofast — soluciones eléctricas para hogares modernos</h1>
-        <p>En Electrofast diseñamos y distribuimos pequeños electrodomésticos inteligentes y confiables pensados para facilitar las tareas diarias del hogar: desde preparar alimentos hasta limpieza y confort. Calidad, simplicidad y ahorro de tiempo.</p>
-        <a class="cta" href="#productos">Ver productos destacados</a>
-      </div>
-      <div class="hero-image" aria-hidden="true">
-        <img src="https://via.placeholder.com/560x320?text=Electrofast+Electrodomésticos" alt="Muestra de electrodomésticos de hogar" />
-      </div>
-    </div>
-  </header>
-
-  <main class="container" role="main">
-    <!-- Sección productos -->
-    <section id="productos" aria-labelledby="productos-title">
-      <h2 id="productos-title">Productos destacados</h2>
-      <p>Electrofast ofrece una gama de productos pensados para las necesidades diarias del hogar.</p>
-
-      <div class=
-
     <!-- Contacto -->
     <section id="contacto" style="margin-top:22px;">
       <h2>Contacto</h2>
       <div style="display:flex; gap:18px; flex-wrap:wrap; margin-top:12px;">
         <div class="contact-card">
           <strong>Electrofast S.A.S.</strong>
-          <p style="font-size:14px;">Calle 9 123, Ciudad</p>
+          <p style="font-size:14px;">Calle Ficticia 123, Ciudad</p>
           <p style="font-size:14px;">Tel: +57 300 000 0000</p>
           <p style="font-size:14px;">Email: contacto@electrofast.com</p>
         </div>
@@ -362,57 +240,335 @@
         <div style="flex:1;">
           <strong>Electrofast</strong>
           <div style="margin-top:6px; max-width:520px;">Electrofast es una empresa enfocada en acercar electrodomésticos confiables, fáciles de usar y con guía didáctica para todo público. Comprometidos con la eficiencia, seguridad y facilidad de uso.</div>
-        </div>
 
-        <div style="min-width:220px;">
-          <div style="color:#fff; margin-bottom:6px; font-weight:700;">Síguenos</div>
-          <div style="display:flex; gap:8px;">
-            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">FB</div>
-            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">IG</div>
-            <div style="background:#fff; color:#0b2f54; padding:8px 12px; border-radius:8px;">YT</div>
-          </div>
-        </div>
-      </div>
 
-      <div style="margin-top:16px; font-size:13px; opacity:0.9;">© <span id="year"></span> Electrofast S.A.S. Todos los derechos reservados.</div>
-    </div>
-  </footer>
-
-  <!-- Pequeño script para interacción -->
-  <script>
-    // Año dinámico en el pie
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // FAQs toggle
-    function toggleFaq(el) {
-      var a = el.nextElementSibling;
-      var sign = el.querySelector('span:last-child');
-      if (!a) return;
-      if (a.style.display === 'block') {
-        a.style.display = 'none';
-        sign.textContent = '+';
-      } else {
-        a.style.display = 'block';
-        sign.textContent = '−';
-      }
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Electrofast — Soluciones Electrónicas Domésticas</title>
+  <style>
+    :root{
+      --accent:#0f62fe;
+      --muted:#6b6f76;
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.6);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color:#222;
+    }
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#eef3ff, var(--bg));
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background: linear-gradient(90deg,var(--accent),#6f8cff);
+      color:white;
+      padding:28px 24px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+      box-shadow: 0 6px 18px rgba(12,32,80,0.12);
+    }
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.12);
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      font-size:22px;
+    }
+    .container{
+      max-width:1100px;
+      margin:24px auto;
+      padding:20px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:20px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(23,35,70,0.06);
+    }
+    h1,h2,h3{margin:0 0 12px 0}
+    p{color:var(--muted); margin:0 0 12px 0; line-height:1.5}
+    ul{margin:0 0 12px 18px}
+    .sidebar .card{position:sticky; top:24px}
+    .product-list{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .prod{
+      border:1px dashed #e6e9ef;
+      padding:10px;
+      border-radius:8px;
+      background:linear-gradient(180deg,#fff, #fbfdff);
+    }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+    }
+    .section{
+      margin-bottom:18px;
+    }
+    .small{font-size:13px;color:var(--muted)}
+    .flex{display:flex;gap:12px;align-items:center}
+    /* Organigrama simple */
+    .org{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      align-items:center;
+    }
+    .org .node{
+      background:linear-gradient(180deg,#ffffff,#f3f6ff);
+      padding:8px 12px;
+      border-radius:8px;
+      border:1px solid #e3e8ff;
+      width:100%;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(18,38,90,0.04);
+    }
+    .two{
+      display:flex; gap:8px;
+    }
+    footer{
+      text-align:center;
+      padding:16px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    pre{
+      background:#f3f6fb;
+      padding:12px;
+      border-radius:8px;
+      overflow:auto;
+      font-size:13px;
     }
 
-    // Form handler (demo)
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = document.getElementById('name').value.trim();
-      var email = document.getElementById('email').value.trim();
-      if (!name || !email) {
-        alert('Por favor completa tu nombre y correo.');
-        return;
-      }
-      // Aquí podrías enviar el formulario por fetch a tu servidor.
-      alert('Gracias, ' + name + '. Tu mensaje ha sido recibido (demo).');
-      this.reset();
-    });
-  </script>
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr}
+      .product-list{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EF</div>
+    <div>
+      <h1 style="margin:0">Electrofast</h1>
+      <div class="small">Soluciones electrónicas domésticas — vida más simple, hogar más inteligente</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <!-- Main column -->
+      <div>
+        <section class="card section">
+          <h2>Idea de negocio</h2>
+          <p><strong>Electrofast</strong> es una empresa didáctica dedicada a diseñar, ensamblar y comercializar pequeños electrodomésticos y dispositivos electrónicos para el hogar, con enfoque en facilidad de uso, eficiencia energética y educación del usuario. Nuestros productos son intuitivos, seguros y vienen con guías didácticas para que el cliente entienda su uso y mantenimiento.</p>
+        </section>
+
+        <section class="card section">
+          <h2>Lean Canvas (resumen)</h2>
+          <ul>
+            <li><strong>Problema:</strong> electrodomésticos complicados, poco eficientes y sin guía clara para usuarios jóvenes o mayores.</li>
+            <li><strong>Clientes:</strong> hogares, estudiantes y adultos mayores buscando soluciones simples y seguras.</li>
+            <li><strong>Propuesta de valor:</strong> dispositivos domésticos fáciles de usar, seguros y con material didáctico que enseña su uso y ahorro energético.</li>
+            <li><strong>Solución:</strong> licuadoras compactas, batidoras silenciosas, planchas con control inteligente, purificadores plug & play.</li>
+            <li><strong>Canales:</strong> tienda online propia, ferias educativas, talleres en colegios y redes sociales.</li>
+            <li><strong>Ingresos:</strong> venta de productos, kits educativos y contratos con colegios para formación práctica.</li>
+            <li><strong>Costos clave:</strong> componentes, ensamblaje, diseño de guías didácticas y marketing educativo.</li>
+            <li><strong>Métricas:</strong> tasa de recompra, NPS (satisfacción), ahorro energético promedio por dispositivo.</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Misión, Visión y Valores</h2>
+          <h3>Misión</h3>
+          <p>Diseñar y ofrecer electrodomésticos domésticos que simplifiquen las tareas diarias, reduzcan el consumo energético y entreguen conocimiento práctico al usuario para aprovechar mejor la tecnología en el hogar.</p>
+
+          <h3>Visión</h3>
+          <p>Ser la marca referente en soluciones electrónicas didácticas para el hogar en la región, reconocida por su simplicidad, seguridad y compromiso educativo hacia clientes de todas las edades.</p>
+
+          <h3>Valores</h3>
+          <ul>
+            <li>Facilidad: interfaces y diseño pensado en el usuario.</li>
+            <li>Seguridad: componentes y certificaciones de primera.</li>
+            <li>Sostenibilidad: eficiencia energética y materiales responsables.</li>
+            <li>Educación: manuales claros y recursos didácticos.</li>
+            <li>Innovación práctica: mejoras constantes basadas en feedback.</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Productos principales (ejemplos)</h2>
+          <div class="product-list">
+            <div class="prod">
+              <h4>Licuadora Compacta "FlashMix"</h4>
+              <p class="small">Motor eficiente, jarra de seguridad y dos velocidades. Manual paso a paso para limpieza y recetas básicas.</p>
+            </div>
+            <div class="prod">
+              <h4>Batidora de Mano "EasyBeat"</h4>
+              <p class="small">Ligera, con selector de potencia y protector de salpicaduras. Incluye guía de uso seguro para principiantes.</p>
+            </div>
+            <div class="prod">
+              <h4>Plancha Inteligente "SmoothPress"</h4>
+              <p class="small">Control de temperatura automático y sistema anti-goteo para tejidos delicados.</p>
+            </div>
+            <div class="prod">
+              <h4>Mini Purificador "PureHome"</h4>
+              <p class="small">Filtro HEPA de larga duración y modo nocturno, ideal para dormitorios y cuartos de estudio.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>¿Cómo facilita Electrofast la vida de las personas?</h2>
+          <ul>
+            <li>Reduce tiempo en tareas diarias con dispositivos fáciles de usar.</li>
+            <li>Disminuye gasto energético con modos eficientes.</li>
+            <li>Acompaña al usuario: guías didácticas y videos para aprender a usar y mantener el producto.</li>
+            <li>Promueve seguridad en el hogar con sensores y protecciones integradas.</li>
+            <li>Educa a jóvenes y mayores mediante talleres prácticos en colegios y comunidades.</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Objetivos (a 12 meses)</h2>
+          <ul>
+            <li>Lanzar 3 productos mínimos viables y 2 kits educativos para escuelas.</li>
+            <li>Alcanzar 1.500 clientes individuales y 10 instituciones educativas aliadas.</li>
+            <li>Reducir consumo promedio por dispositivo en un 18% frente a modelos anteriores.</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>DOFA (SWOT simplificado)</h2>
+          <div class="two">
+            <div style="flex:1">
+              <h4>Fortalezas</h4>
+              <ul>
+                <li>Enfoque educativo único.</li>
+                <li>Diseño centrado en el usuario.</li>
+                <li>Equipo joven y técnico.</li>
+              </ul>
+            </div>
+            <div style="flex:1">
+              <h4>Oportunidades</h4>
+              <ul>
+                <li>Alianzas con colegios y programas de formación.</li>
+                <li>Mayor demanda de productos eficientes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="two" style="margin-top:10px">
+            <div style="flex:1">
+              <h4>Debilidades</h4>
+              <ul>
+                <li>Capacidad de producción limitada en etapa inicial.</li>
+                <li>Reconocimiento de marca bajo al inicio.</li>
+              </ul>
+            </div>
+            <div style="flex:1">
+              <h4>Amenazas</h4>
+              <ul>
+                <li>Competencia de marcas consolidadas.</li>
+                <li>Variaciones en costos de componentes electrónicos.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>Identidad jurídica (datos de ejemplo)</h2>
+          <p class="small">Estos datos son ficticios y sirven como plantilla para completar en trámites reales:</p>
+          <ul>
+            <li><strong>Nombre legal:</strong> Electrofast S.A.S.</li>
+            <li><strong>NIT:</strong> 900.123.456-7 (ejemplo)</li>
+            <li><strong>Tipo de sociedad:</strong> Sociedad por acciones simplificada (S.A.S.)</li>
+            <li><strong>Registro mercantil:</strong> Cámara de Comercio local — matrícula N° 2025-000123</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Plan rápido de marketing</h2>
+          <p>Campañas en redes enfocadas en demostraciones, talleres locales en colegios, alianzas con tiendas de accesorios para el hogar y estrategias de contenido (videos cortos con tips y recetas usando los productos).</p>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Equipo fundador</h3>
+          <div style="margin-bottom:8px">
+            <strong>Alejandro</strong><div class="small">Director de Producto — Ingeniería y diseño</div>
+          </div>
+          <div style="margin-bottom:8px">
+            <strong>Samuel</strong><div class="small">Director de Operaciones — Producción y logística</div>
+          </div>
+          <div style="margin-bottom:8px">
+            <strong>Thomas</strong><div class="small">Director de Educación — Contenido didáctico y formación</div>
+          </div>
+          <a class="btn" href="#contacto">Contacto</a>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Organigrama (simple)</h3>
+          <div class="org">
+            <div class="node"><strong>CEO</strong><div class="small">Alejandro</div></div>
+            <div class="two" style="width:100%;">
+              <div style="flex:1" class="node"><strong>Producción</strong><div class="small">Samuel</div></div>
+              <div style="flex:1" class="node"><strong>Educación & Marketing</strong><div class="small">Thomas</div></div>
+            </div>
+            <div class="node small">Soporte • Ventas • Logística (equipos operativos)</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Cargos y funciones (ejemplos)</h3>
+          <ul>
+            <li><strong>Director de Producto (Alejandro):</strong> Diseñar especificaciones, control de calidad y roadmap.</li>
+            <li><strong>Jefe de Producción (Samuel):</strong> Gestión de proveedores, ensamblaje y control de inventario.</li>
+            <li><strong>Coordinador Educativo (Thomas):</strong> Crear kits, guías y talleres para usuarios y colegios.</li>
+            <li><strong>Soporte al cliente:</strong> Atención postventa y garantía.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Contacto</h3>
+          <p class="small">Electrofast contacto:</p>
+          <p class="small"><strong>Email:</strong> hola@electrofast.com</p>
+          <p class="small"><strong>Teléfono:</strong> +57 300 000 0000</p>
+          <p class="small" id="contacto"><strong>Dirección:</strong> Calle 123, Ciudad bogota</p>
+        </div>
+      </aside>
+    </div>
+
+    <div style="max-width:1100px; margin:18px auto;">
+      <div class="card">
+        <h3>Notas finales / Recomendaciones</h3>
+        
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Electrofast.
+  </footer>
 </body>
 </html>
+
 
 
 
